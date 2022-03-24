@@ -1,0 +1,70 @@
+/* Modify headings: 1 - 7 and paragraph*/
+/* Page main heading */
+h1 {
+    border-bottom: 2px double rgb(171, 150, 111);
+    border-top: 2px double rgb(171, 150, 111);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.00rem;
+    font-weight: bold;
+}
+
+/* Page secondary heading */
+h2 {
+    border-bottom: 2px double rgb(171, 150, 111);
+    border-top: 2px double rgb(171, 150, 111);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.50rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Card heading */
+h3 {
+    border-bottom: 2.5px ridge rgba(182, 149, 87, 0.5);
+    border-top: 5px ridge rgba(182, 149, 87, 0.5);
+    color: rgb(255, 255, 255);
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+h3 a {
+    text-decoration: none;
+}
+
+/* Link text */
+h4 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.00rem;
+}
+
+/*  */
+h5 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    font-size: 0;
+}
+
+/*  */
+h6 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    font-size: 0;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}

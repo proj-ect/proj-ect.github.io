@@ -1,0 +1,28 @@
+/* Modify card */
+.card {
+    background-color: rgb(36, 36, 36);
+}
+
+/* Custom cards */
+/* Remove card background and modify */
+.card-rmv-bg {
+    background-color: rgba(35, 34, 34, 0);
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* Media card with image/video left or right */ 
+.media-card img, .media-card video {
+    border: 5px ridge rgb(171, 150, 111);
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+}
+
+.media-card p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+}

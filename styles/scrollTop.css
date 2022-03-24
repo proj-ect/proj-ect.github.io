@@ -1,0 +1,21 @@
+/* Modify button which scroll to the top */
+#scrollTop a {
+    border: 1px dotted rgb(224, 224, 224);
+    background-color: rgb(33, 33, 33);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 2.5px;
+    text-align: center;
+    max-height: 25px;
+    position: fixed;
+    max-width: 25px;
+    height :100%;
+    width: 100vh;
+    bottom: 157px;
+    right: 10px;
+}
+
+#scrollTop a:hover {
+    background-color: rgb(115, 115, 115);
+    color: rgb(255, 175, 175);
+}
