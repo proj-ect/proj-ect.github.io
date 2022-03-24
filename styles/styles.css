@@ -1,0 +1,248 @@
+body {
+    background-image: url(../bg/Elden-Ring-Wallpaper-9.png);
+    background-color: rgb(224, 224, 224);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 331px;
+}
+
+hr {
+    opacity: 0;
+}
+
+.horCard {
+    background-color: rgba(35, 34, 34, 0);
+    padding: 0;
+    border: 0;
+}
+
+.horCard img, .horCard video {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 5px ridge rgb(171, 150, 111);
+}
+
+.horCard p {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.bigCard {
+    padding: 0;
+    margin-bottom: 15%;
+    border: 0;
+}
+
+.bgCard {
+    background-color: rgba(35, 34, 34, 0.90);
+    color: rgb(255, 255, 255);
+    padding: 0 5px 10px 5px;
+    text-align: center;
+    font-weight: bold;
+    overflow: auto;
+}
+
+.smallCard {
+    border-radius: 10px;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.mediumCard {
+    border-radius: 10px;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.bgCard img {
+    width: 100%;
+}
+
+.bgCard p {
+    font-size: 12px;
+}
+
+h3 {
+    border-bottom: 2px double rgb(171, 150, 111);
+    border-top: 2px double rgb(171, 150, 111);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+h2 {
+    border-bottom: 2px double rgb(171, 150, 111);
+    border-top: 2px double rgb(171, 150, 111);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.25rem;
+    margin-left: 5%;
+    margin-bottom: 15px;
+}
+
+h4 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.row {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.row * {
+    flex-shrink: 1;
+}
+
+#content {
+    border-right: 1.5px double rgb(155, 155, 155);
+    border-left: 1.5px double rgb(155, 155, 155);
+    min-height: calc(100vh - 197px);
+    max-width: 1920px;
+    padding: 0;
+}
+
+.pic {
+    background-color: rgba(35, 34, 34, 0.90);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    max-height: 450px;
+    font-size: 15px;
+    width: 350px;
+    margin: 5px;
+    padding: 0;
+}
+
+.pic img {
+    margin: auto;
+    width: 100px;
+}
+
+.pic .card-header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.pic .card-header a:hover {
+    color: rgb(13, 110, 253);
+    text-decoration: none;
+}
+
+.startWeapon a {
+    text-decoration: none;
+    height: 15px;
+    width: 15px;
+}
+
+.startWeapon img {
+    height: 25px;
+    width: 25px;
+}
+
+footer, nav {
+    min-height: 49px;
+    font-size: 0;
+}
+
+nav .navbar-brand img {
+    height: 45px;
+    width: 45px;
+}
+
+.navbar, .navbar-brand {
+    padding: 1px 0 1px 0;
+}
+
+.nav-pills a, .nav-link a {
+    color: rgb(133, 133, 133);
+    padding: 11px 5px 11px 5px;
+    align-self: center;
+}
+
+.nav-link {
+    padding: 11px;
+}
+
+.navbar-text {
+    padding: 11px 0 11px 0;
+    display: block;
+    
+}
+
+nav.bg-custom, footer.bg-custom {
+    background-color: rgb(33, 33, 33);
+}
+
+nav.navbar-dark, footer.navbar-dark {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 15px;
+}
+
+footer .nav-link img {
+    height: 25px;
+    width: 25px;
+}
+
+footer .dropup li {
+    margin: 5px;
+}
+
+footer .dropdown-menu {
+    width: 250px;
+    padding: 0;
+    margin: 0;
+}
+
+.topFooter{
+    background-color: rgb(51, 51, 51);
+    min-height: 98px;
+    max-height: 98px;
+}
+
+#scrollTop a {
+    border: 1px dotted rgb(224, 224, 224);
+    background-color: rgb(33, 33, 33);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 2.5px;
+    text-align: center;
+    max-height: 25px;
+    position: fixed;
+    max-width: 25px;
+    height :100%;
+    width: 100vh;
+    bottom: 157px;
+    right: 10px;
+}
+
+#scrollTop a:hover {
+    background-color: rgb(115, 115, 115);
+    color: rgb(255, 175, 175);
+}
+
+section {
+    background-image: url(../bg/Elden-Ring-Wallpaper-7.png);
+    background-color: rgb(237, 237, 237);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+#hImg {
+    border: rgb(33, 33, 33) 1px dotted;
+}
+
+#hImg img {
+    height: 250px;
+    width: 100%;
+}

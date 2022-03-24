@@ -1,0 +1,43 @@
+<script>
+    // Remove class "active" from links
+    $(".active").removeClass("active");
+    // Define current page using domain's query string and add class "active" to its link
+    $("#"+location.href.split("?")[1].slice(0,-1)).addClass("active");
+</script>
+<nav class="navbar navbar-expand-sm bg-custom navbar-dark sticky-top">
+    <div class="container-fluid">
+    <!-- Brand name and logo -->
+    <a class="navbar-brand" href="index.html?index#">
+        <img src="icon/Elden-Ring-icon-2.png" alt="" class="rounded-pill">
+        Elden Ring
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTop" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar items/links -->
+    <div class="collapse navbar-collapse" id="navbarTop">
+        <ul class="nav nav-pills w-100">
+        <li class="nav-item">
+            <a id="index" class="nav-link active" href="index.html?index#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a id="classes" class="nav-link" href="index.html?classes#">Classes</a>
+        </li>
+        <li class="nav-item">
+            <a id="editions" class="nav-link" href="index.html?editions#">Editions</a>
+        </li>
+        <li class="nav-item">
+            <a id="gallery" class="nav-link" href="index.html?gallery#">Gallery</a>
+        </li>
+        <li class="nav-item me-auto">
+            <a id="guides" class="nav-link" href="index.html?guides#">Guides</a>
+        </li>
+        <!-- Navbar items/links align right -->
+        <li class="nav-item">
+            <a id="about" class="nav-link" href="index.html?about#">About</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+</nav>
