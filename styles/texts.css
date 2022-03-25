@@ -40,7 +40,7 @@ h3 a {
     text-decoration: none;
 }
 
-/* Link text */
+/* Link text: navigation and footer bars */
 h4 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -59,12 +59,27 @@ h5 {
     margin: 0;
 }
 
-/*  */
-h6 {
+/* Link text: other */
+/* Link text: link */
+h6 a {
     color: rgb(255, 255, 255);
+    text-decoration: none;
     text-align: center;
+    font-size: 1.25rem;
     font-weight: bold;
-    font-size: 0;
+}
+
+/* Link text: other hover */
+h6 a:hover {
+    text-decoration: underline solid rgb(171, 150, 111);
+    color: rgb(171, 150, 111);
+}
+
+/* link text: other if inside carousel */
+.carousel-inner h6 {
+    border: 5px double rgb(171, 150, 111);
+    border-top-width: 0;
+    margin: 0;
 }
 
 /* Paragraph */

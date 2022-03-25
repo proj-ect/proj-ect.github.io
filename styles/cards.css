@@ -44,6 +44,26 @@
     border-top-width: 0px;
 }
 
+.media-carousel span {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.media-carousel ul {
+    border: 5px double rgb(171, 150, 111);
+    border-radius: 0 0 15px 15px;
+    border-top-width: 0px;
+    text-align: left;
+}
+
+.media-carousel ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 .media-card img, .media-card video {
     border: 5px ridge rgb(171, 150, 111);
     border-radius: 15px;
