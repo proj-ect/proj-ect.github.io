@@ -36,6 +36,7 @@ h3 {
 }
 
 h3 a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -46,12 +47,16 @@ h4 a {
     font-size: 1.00rem;
 }
 
-/*  */
+/* Carousel heading */
 h5 {
+    border: 5px double rgb(171, 150, 111);
     color: rgb(255, 255, 255);
+    border-bottom-width: 0px;
+    border-top-width: 0px;
     text-align: center;
+    font-size: 2.00rem;
     font-weight: bold;
-    font-size: 0;
+    margin: 0;
 }
 
 /*  */
@@ -62,9 +67,23 @@ h6 {
     font-size: 0;
 }
 
+/* Paragraph */
 p {
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Spans */
+/* Lowest: Used example tables */
+.lwst {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+/* Highest: Used example tables */
+.hghst {
+    color: rgb(0, 255, 0);
     font-weight: bold;
 }

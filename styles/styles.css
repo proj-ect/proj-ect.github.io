@@ -5,7 +5,7 @@
 
 /* Modify body element */
 body {
-    background-image: url(../bg/Elden-Ring-Wallpaper-9.png);
+    background-image: url(/pics/bg/Elden-Ring-Wallpaper-9.png);
     background-color: rgb(65, 65, 65);
     background-repeat: no-repeat;
     background-position: center;
@@ -23,7 +23,7 @@ body {
 }
 
 section {
-    background-image: url(../bg/Elden-Ring-Wallpaper-7.png);
+    background-image: url(/pics/bg/Elden-Ring-Wallpaper-7.png);
     background-color: rgb(237, 237, 237);
     background-repeat: no-repeat;
     background-position: center;

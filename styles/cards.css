@@ -3,6 +3,12 @@
     background-color: rgb(36, 36, 36);
 }
 
+.card-body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
 /* Custom cards */
 /* Remove card background and modify */
 .card-rmv-bg {
@@ -12,7 +18,32 @@
     border: 0;
 }
 
+/* Class card */
+.class-card img, .class-card img {
+    align-content: center;
+    height: auto;
+    width: 125px;
+}
+
+.wpn-icon img {
+    height: 35px;
+    width: 35px;
+}
+
 /* Media card with image/video left or right */ 
+.media-carousel img, .media-carousel video {
+    border: 5px double rgb(171, 150, 111);
+    border-radius: 15px 15px 0 0;
+    height: auto;
+    width: 100%;
+}
+
+.media-carousel p {
+    border: 5px double rgb(171, 150, 111);
+    border-radius: 0 0 15px 15px;
+    border-top-width: 0px;
+}
+
 .media-card img, .media-card video {
     border: 5px ridge rgb(171, 150, 111);
     border-radius: 15px;
