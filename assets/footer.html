@@ -1,14 +1,50 @@
+<!-- For coding hints
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css"> -->
+<!-- Active fslightbox -->
+<script src="js/fslightbox.js"></script>
+<!-- Set all redirectUrls values to current url. -->
+<script>
+  var rUrls = document.getElementsByClassName("redirectURL");
+  for (let i = 0; i < rUrls.length; i++) {
+    rUrls[i].setAttribute("value", window.location.href);
+  };
+</script>
 <footer class="navbar navbar-expand-sm bg-custom navbar-dark">
     <div class="container-fluid">
       <!-- Footer items/links-->
       <!-- Footer left-->
-      <div class="navbar-nav nav-pills nav-justified col justify-content-start">
-        <form action="">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Enter email">
-            <button class="btn btn-success border-rad" type="button">Subscribe</button>
+      <div class="nav nav-pills col justify-content-start">
+        <!-- Newsletter Subscription Form -->
+        <div class="nav-item dropup">
+          <a class="nav-link dropLeft dropdown-toggle" href="#" id="newsletterSubForm" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            Newsletter
+          </a>
+          <!-- Newsletter Subscription Form content -->
+          <div class="dropdown-menu dropdown-menu-dark dropdown-menu-start" style="width: 330px;">
+            <form class="p-4" action="https://submit-form.com/jOOvUXX0">
+              <input class="redirectURL" type="hidden" name="_redirect">
+              <input class="redirectURL" type="hidden" name="_error">
+              <input type="hidden" name="_append" value="false">
+              <input type="hidden" name="_email.subject" value="New Pro-ject Newsletter Form Subscription"/>
+              <div class="dropdown-item-text text-center">
+                <h3>Newsletter</h3>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="sub-email" name="Email: " placeholder=" " required>
+                <label for="sub-email">Email Address<span class="lwst">*</span></label>
+              </div>
+              <hr style="margin: 5px;">
+              <div class="text-center">
+                <button class="btn btn-success">Subscribe</button>
+              </div>
+            </form>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-item-text text-center">
+              Feel free to try. If you want an answer, please use a valid email address.
+            </div>
           </div>
-        </form>
+        </div>
       </div>
       <!-- Footer middle-->
       <ul class="navbar-nav nav-pills nav-justified col justify-content-center">
@@ -21,7 +57,7 @@
       <!-- Footer right-->
       <div class="nav nav-pills col justify-content-end">
         <div class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="/index.html?help#">
             <img src="/pics/icon/favpng_question-icon-help-and-support-icon-help-icon.png" alt="" class="rounded-pill">
             Help
           </a>
@@ -33,32 +69,53 @@
             Contact
           </a>
           <!-- Contact form content -->
-          <div class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-            <form>
-              <div class="mb-3">
-                <label for="fName" class="form-label">First name</label>
-                <input type="text" class="form-control is-invalid" id="fName" required>
+          <div class="dropdown-menu dropdown-menu-dark dropdown-menu-end" style="width: 330px;">
+            <form class="p-4" action="https://submit-form.com/9s64EXbL">
+              <input class="redirectURL" type="hidden" name="_redirect">
+              <input class="redirectURL" type="hidden" name="_error">
+              <input type="hidden" name="_append" value="false">
+              <input type="hidden" name="_email.subject" value="New Pro-ject Contact Form Message"/>
+              <div class="dropdown-item-text text-center">
+                <h3>Contact Us</h3>
               </div>
-              <div class="mb-3">
-                <label for="sName" class="form-label">Surname</label>
-                <input type="text" class="form-control is-invalid" id="sName" required>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="con-subject" name="Subject: " placeholder=" " required>
+                <label for="con-subject">Subject<span class="lwst">*</span></label>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control is-invalid" id="email" required>
+              <hr style="margin: 5px;">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="con-first-name" name="First Name: " placeholder=" " required>
+                <label for="con-first-name">First Name<span class="lwst">*</span></label>
               </div>
-              <div class="mb-3">
-                <label for="telNum" class="form-label">Telephone</label>
-                <input type="tel" class="form-control" id="telNum">
+              <hr style="margin: 5px;">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="con-last-name" name="Last Name: " placeholder=" " required>
+                <label for="con-last-name">Last Name<span class="lwst">*</span></label>
               </div>
-              <div class="mb-3">
-                <label for="info" class="form-label">Further information</label>
-                <textarea rows="5" class="form-control is-invalid" id="info" required></textarea>
+              <hr style="margin: 5px;">
+              <div class="form-floating">
+                <input type="tel" class="form-control" id="con-phone" name="Phone: " placeholder=" ">
+                <label for="con-phone">Phone</label>
               </div>
-              <div class="mb-3">
-                <button type="submit" class="btn btn-primary">Submit</button>
+              <hr style="margin: 5px;">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="con-email" name="Email: " placeholder=" " required>
+                <label for="con-email">Email Address<span class="lwst">*</span></label>
+              </div>
+              <hr style="margin: 5px;">
+              <div class="form-floating">
+                <textarea class="form-control" id="con-message" name="Message: " placeholder=" " required style="height: 150px;"></textarea>
+                <label for="con-message">Message<span class="lwst">*</span></label>
+              </div>
+              <hr style="margin: 5px;">
+              <div class="text-center">
+                <input type="submit" class="btn btn-success">
               </div>
             </form>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-item-text text-center">
+              Feel free to try. If you want an answer, please use a valid email address.
+            </div>
           </div>
         </div>
       </div>

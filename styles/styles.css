@@ -111,3 +111,20 @@ footer .dropup li {
     min-height: 98px;
     max-height: 98px;
 }
+
+/* Dropdown modify */
+
+.dropLeft.dropdown-toggle::after {
+    content: none;
+}
+
+.dropLeft.dropdown-toggle::before {
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+    border-bottom: .3em solid;
+    vertical-align: .255em;
+    display: inline-block;
+    margin-left: .255em;
+    border-top: 0;
+    content: "";
+}
