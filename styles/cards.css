@@ -10,6 +10,14 @@
 }
 
 /* Custom cards */
+/* Media frame */
+.pic-frame.card-img-overlay{
+    background-image: url(/pics/Picture_Frame.png);
+    background-position: center;
+    background-size: contain;
+    padding: 0;
+}
+
 /* Remove card background and modify */
 .card-rmv-bg {
     background-color: rgba(35, 34, 34, 0);
