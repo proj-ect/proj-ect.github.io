@@ -12,7 +12,7 @@
 /* Custom cards */
 /* Media frame */
 .pic-frame.card-img-overlay{
-    background-image: url(/pics/Picture_Frame.png);
+    background-image: url(/pics/assets/Picture_Frame.png);
     background-position: center;
     background-size: contain;
     padding: 0;
