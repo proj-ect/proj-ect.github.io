@@ -107,3 +107,9 @@ p {
 .form-floating label {
     color: rgba(31, 31, 31, 0.75);
 }
+
+/* Em */
+em {
+    color: rgb(201, 180, 180);
+    font-weight: bolder;
+}
