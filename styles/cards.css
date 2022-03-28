@@ -13,8 +13,9 @@
 /* Media frame */
 .pic-frame.card-img-overlay{
     background-image: url(/pics/assets/Picture_Frame.png);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 100% 100%;
     padding: 0;
 }
 
