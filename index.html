@@ -40,7 +40,7 @@
       // Load and place footer
       $("#footer-placeholder").load("assets/footer.html");
       // Define site content usign domain's query string. Load and place content
-      $("#content-placeholder").load("pages/"+location.href.split("?")[1].slice(0,-1)+".html");
+      $("#content-placeholder").load("pages/"+location.href.split("?")[1].split("#")[0]+".html");
     </script>
     <!-- First page load and query String assign -->
     <script>

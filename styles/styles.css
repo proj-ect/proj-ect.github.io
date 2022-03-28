@@ -2,6 +2,7 @@
 @import url(scrollTop.css);
 @import url(texts.css);
 @import url(cards.css);
+@import url(accordion.css);
 
 /* Modify body element */
 body {
