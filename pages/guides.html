@@ -3,6 +3,11 @@
   <link rel="stylesheet" href="styles/styles.css"> -->
 <!-- Active fslightbox -->
 <script src="js/fslightbox.js"></script>
+<script>
+  $('#Starter-Guide, #Five-Tips').on('show.bs.collapse', function () {
+    $('html, body').scrollTop($(this).offset().top);
+  });
+</script>
 <div class="row w-100">
   <h1>Elden Ring guide</h1>
   <div class="card card-rmv-bg media-card">
