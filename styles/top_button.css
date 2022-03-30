@@ -1,5 +1,5 @@
 /* Modify button which scroll to the top */
-#scrollTop {
+#top_button {
     position: fixed;
     display: none;
     height: 25px;
@@ -7,7 +7,7 @@
     right: 15px;
 }
 
-#scrollTop a {
+#top_button a {
     border: 1px double rgb(224, 224, 224);
     background-color: rgb(33, 33, 33);
     color: rgb(255, 255, 255);
@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-#scrollTop a:hover {
+#top_button a:hover {
     background-color: rgb(115, 115, 115);
     color: rgb(255, 175, 175);
 }
