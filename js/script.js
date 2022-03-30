@@ -1,4 +1,5 @@
 // Variables, elements etc
+var rUrls = document.getElementsByClassName("redirectURL"); // Element for form redirect
 var body_bottom = document.getElementById("body_bottom"); // Element to define body bottom
 var top_button = document.getElementById("top_button"); // Button for page top scrolling
 
@@ -49,37 +50,54 @@ function body_bottomFunc() {
 // At the firs time loading page. Check if content is defined
 // If content isn't defined. Redirect to home page
 if(window.location.href.split("?")[1] == undefined) {
-window.location.assign("index.html?index#");};
+  window.location.assign("index.html?index#");
+};
 
-// 
+// Jquery part
+// Wait until document is fully loaded before execute
 $(document).ready(function() {
-  //
-  $("#Starter_Guide, #Five_Tips").on("shown.bs.collapse", function() {
-    console.log("collapsed");
-    setTimeout(() => {$('html, body').scrollTop($(this).offset().top);}, 250);
-  });
-
-  // Load and place navigation bar
+  // Load and place page content to the placeholders
+  // Navigation bar
   $("#navbar_placeholder").load("assets/navbar.html");
 
-  // Load and place upper footer
-  $("#bottom_bar_placeholder").load("assets/bottom_bar.html");
-
-  // Load and place footer
-  $("#footer_placeholder").load("assets/footer.html");
-
-  // Define site content usign domain's query string. Load and place content
+  // Content
+  // Define site content usign domain's query string
   $("#content_placeholder").load("pages/"+location.href.split("?")[1].split("#")[0]+".html");
 
-  // Remove class "active" from links
-  $(".active").removeClass("active");
+  // Bottom bar
+  $("#bottom_bar_placeholder").load("assets/bottom_bar.html");
 
-  // Define current page using domain's query string and add class "active" to its link
-  $("#"+location.href.split("?")[1].slice(0,-1)).addClass("active");
+  // Footer
+  $("#footer_placeholder").load("assets/footer.html");
 
-  // Set all redirectUrls values to current url
-  var rUrls = document.getElementsByClassName("redirectURL");
-  for (let i = 0; i < rUrls.length; i++) {
-    rUrls[i].setAttribute("value", window.location.href);
-  };
+  // Wait until document is loaded aften placements before execute
+  $(document).ready(function() {
+    // Manage the navigation bar
+    // Active page indicator
+    // Remove "active"-class from all links
+    $(".active").removeClass("active");
+
+    // Define current page using domain's queary string
+    // Add "active"-class to its link
+    $("#"+location.href.split("?")[1].slice(0,-1)).addClass("active");
+
+    // Listen accordions collapse event. Scroll to the top of accordion
+    $("#Starter_Guide, #Five_Tips").on("shown.bs.collapse", function() {
+      setTimeout(() => {$('html, body').scrollTop($(this).offset().top);}, 250);
+    });
+
+    // Set all redirectUrls values to current url in forms
+    for (let i = 0; i < rUrls.length; i++) {
+      rUrls[i].setAttribute("value", window.location.href);
+    };
+
+    // Add fslightbox on to the page
+    function addJS(jsfile) {
+      var src = document.createElement("script");
+      src.setAttribute("src", jsfile);
+      document.getElementsByTagName("body")[0].appendChild(src);
+    };
+    addJS("/js/fslightbox.js");
+
+  });
 });
