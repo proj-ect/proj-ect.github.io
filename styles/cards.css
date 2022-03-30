@@ -74,7 +74,9 @@
 }
 
 .media-card img, .media-card video {
+    background-image: url(/pics/assets/Media-file-error-in-online-video.png);
     border: 5px ridge rgb(171, 150, 111);
+    background-size: 100% 100%;
     border-radius: 15px;
     height: auto;
     width: 100%;
