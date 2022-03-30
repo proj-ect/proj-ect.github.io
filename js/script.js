@@ -30,6 +30,7 @@ function backTopFunc() {
     }
   };
 
+ // 
   function topFotFunc() {
       if (
           isInViewport(upfot)
@@ -43,3 +44,7 @@ function backTopFunc() {
           backTop.style.top = "auto";
       }
   };
+
+// First page load and query String assign
+if(window.location.href.split("?")[1] == undefined) {
+window.location.assign("index.html?index#");};

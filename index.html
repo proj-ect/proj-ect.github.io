@@ -42,12 +42,6 @@
       // Define site content usign domain's query string. Load and place content
       $("#content-placeholder").load("pages/"+location.href.split("?")[1].split("#")[0]+".html");
     </script>
-    <!-- First page load and query String assign -->
-    <script>
-      if(window.location.href.split("?")[1] == undefined) {
-      window.location.assign("index.html?index#");};
-    </script>
-    
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->
