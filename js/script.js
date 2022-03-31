@@ -50,7 +50,7 @@ function body_bottomFunc() {
 // At the firs time loading page. Check if content is defined
 // If content isn't defined. Redirect to home page
 if(window.location.href.split("?")[1] == undefined) {
-  window.location.assign("index.html?index#");
+  window.location.assign("?index#");
 };
 
 // Jquery part
@@ -71,7 +71,8 @@ $(document).ready(function() {
   $("#footer_placeholder").load("assets/footer.html");
 
   // Wait until document is loaded aften placements before execute
-  $(document).ready(function() {
+  $("#navbarTop").ready(function() {
+    console.log("navbar loaded...")
     // Manage the navigation bar
     // Active page indicator
     // Remove "active"-class from all links
@@ -82,8 +83,9 @@ $(document).ready(function() {
     $("#"+location.href.split("?")[1].slice(0,-1)).addClass("active");
 
     // Listen accordions collapse event. Scroll to the top of accordion
-    $("#Starter_Guide, #Five_Tips").on("shown.bs.collapse", function() {
-      setTimeout(() => {$('html, body').scrollTop($(this).offset().top);}, 250);
+    $("#Starter_Guide, #Five_Tips").on("show.bs.collapse", function() {
+      console.log("expanded...")
+      setTimeout(() => {$('html, body').scrollTop($(this).offset().top);}, 500);
     });
 
     // Set all redirectUrls values to current url in forms
