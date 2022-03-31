@@ -2,6 +2,7 @@
 var rUrls = document.getElementsByClassName("redirectURL"); // Element for form redirect
 var body_bottom = document.getElementById("body_bottom"); // Element to define body bottom
 var top_button = document.getElementById("top_button"); // Button for page top scrolling
+var collapse_elem1 = document.getElementById("Starter_Guide");
 
 // Check if element is in the viewport
 function isInViewport(elem) {
@@ -55,7 +56,7 @@ if(window.location.href.split("?")[1] == undefined) {
 
 // Jquery part
 // Wait until document is fully loaded before execute
-$(document).ready(function() {
+$(document).ready( function() {
   // Load and place page content to the placeholders
   // Navigation bar
   $("#navbar_placeholder").load("assets/navbar.html");
@@ -69,37 +70,4 @@ $(document).ready(function() {
 
   // Footer
   $("#footer_placeholder").load("assets/footer.html");
-
-  // Wait until document is loaded aften placements before execute
-  $("#navbarTop").ready(function() {
-    console.log("navbar loaded...")
-    // Manage the navigation bar
-    // Active page indicator
-    // Remove "active"-class from all links
-    $(".active").removeClass("active");
-
-    // Define current page using domain's queary string
-    // Add "active"-class to its link
-    $("#"+location.href.split("?")[1].slice(0,-1)).addClass("active");
-
-    // Listen accordions collapse event. Scroll to the top of accordion
-    $("#Starter_Guide, #Five_Tips").on("show.bs.collapse", function() {
-      console.log("expanded...")
-      setTimeout(() => {$('html, body').scrollTop($(this).offset().top);}, 500);
-    });
-
-    // Set all redirectUrls values to current url in forms
-    for (let i = 0; i < rUrls.length; i++) {
-      rUrls[i].setAttribute("value", window.location.href);
-    };
-
-    // Add fslightbox on to the page
-    function addJS(jsfile) {
-      var src = document.createElement("script");
-      src.setAttribute("src", jsfile);
-      document.getElementsByTagName("body")[0].appendChild(src);
-    };
-    addJS("/js/fslightbox.js");
-
-  });
 });

@@ -38,3 +38,13 @@
         </div>
     </div>
 </nav>
+<script>
+    // Manage the navigation bar
+    // Active page indicator
+    // Remove "active"-class from all links
+    $(".active").removeClass("active");
+
+    // Define current page using domain's queary string
+    // Add "active"-class to its link
+    $("#"+location.href.split("?")[1].slice(0,-1)).addClass("active");
+</script>

@@ -654,3 +654,8 @@
     </p>
   </div>
 </div>
+<script>
+  $("#Starter_Guide, #Five_Tips").on("show.bs.collapse", function() {
+      setTimeout(() => {$('html, body').scrollTop($(this).offset().top);}, 500);
+    });
+</script>
