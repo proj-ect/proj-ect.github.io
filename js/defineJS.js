@@ -6,7 +6,7 @@
   };
 
 // Wait until document ready
-$(function() {
+$("#navbarTop").ready(function() {
  // Add script on to the page
  addJS("/js/script.js");
  // Add fslightbox on to the page
