@@ -61,7 +61,9 @@ $("#navbar_placeholder").load("assets/navbar.html");
 // Content
 // Define site content usign domain's query string
 $("#content_placeholder").load("pages/"+location.href.split("?")[1].split("#")[0]+".html", function() {
-  //
+  $("#Starter_Guide, #Five_Tips").on("show.bs.collapse", function() {
+    setTimeout(() => {$('html, body').scrollTop($(this).offset().top);}, 500);
+  });
 });
 
 // Bottom bar
