@@ -74,7 +74,7 @@ $("#footer_placeholder").load("assets/footer.html", function() {
   // Manage the navigation bar and footer bar
   // Active page indicator
   // Remove "active"-class from all links
-  $(".active").removeClass("active");
+  $(".nav-link.active").removeClass("active");
 
   // Define current page using domain's queary string
   // Add "active"-class to its link
