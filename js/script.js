@@ -51,7 +51,7 @@ function body_bottomFunc() {
 // At the firs time loading page. Check if content is defined
 // If content isn't defined. Redirect to home page
 if(window.location.href.split("?")[1] == undefined) {
-  window.location.assign("?index#");
+  window.location.assign("?home#");
 };
 
 // Load and place page content to the placeholders
@@ -89,7 +89,7 @@ $("#footer_placeholder").load("assets/footer.html", function() {
     elem.setAttribute("src", jsfile);
     document.getElementsByTagName("body")[0].appendChild(elem);
   };
-  
+
   // FSLightBox to the page
   JS("/js/fs/fslightbox.js");
 });
