@@ -54,20 +54,42 @@ if(window.location.href.split("?")[1] == undefined) {
   window.location.assign("?index#");
 };
 
-// Jquery part
-// Wait until document is fully loaded before execute
-$(document).ready( function() {
-  // Load and place page content to the placeholders
-  // Navigation bar
-  $("#navbar_placeholder").load("assets/navbar.html");
+// Load and place page content to the placeholders
+// Navigation bar
+$("#navbar_placeholder").load("assets/navbar.html");
 
-  // Content
-  // Define site content usign domain's query string
-  $("#content_placeholder").load("pages/"+location.href.split("?")[1].split("#")[0]+".html");
+// Content
+// Define site content usign domain's query string
+$("#content_placeholder").load("pages/"+location.href.split("?")[1].split("#")[0]+".html", function() {
+  //
+});
 
-  // Bottom bar
-  $("#bottom_bar_placeholder").load("assets/bottom_bar.html");
+// Bottom bar
+$("#bottom_bar_placeholder").load("assets/bottom_bar.html");
 
-  // Footer
-  $("#footer_placeholder").load("assets/footer.html");
+// Footer
+$("#footer_placeholder").load("assets/footer.html", function() {
+  // Manage the navigation bar and footer bar
+  // Active page indicator
+  // Remove "active"-class from all links
+  $(".active").removeClass("active");
+
+  // Define current page using domain's queary string
+  // Add "active"-class to its link
+  $("#"+location.href.split("?")[1].slice(0,-1)).addClass("active");
+
+  // Define current page and set redirect pages for forms
+  for (let i = 0; i < rUrls.length; i++) {
+    rUrls[i].setAttribute("value", window.location.href);
+  };
+
+  // Add js files to the page
+  function JS(jsfile) {
+    var elem = document.createElement("script");
+    elem.setAttribute("src", jsfile);
+    document.getElementsByTagName("body")[0].appendChild(elem);
+  };
+  
+  // FSLightBox to the page
+  JS("/js/fs/fslightbox.js");
 });
